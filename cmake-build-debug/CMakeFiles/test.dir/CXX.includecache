@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../libpackager/include/packager/file/public/buffer_callback_params.h
-functional
--
-
-../libpackager/include/packager/hls/public/hls_params.h
-string
--
-
-../libpackager/include/packager/media/public/ad_cue_generator_params.h
+../libpackager/include/packager/ad_cue_generator_params.h
 vector
 -
 
-../libpackager/include/packager/media/public/chunking_params.h
+../libpackager/include/packager/buffer_callback_params.h
+functional
+-
 
-../libpackager/include/packager/media/public/crypto_params.h
+../libpackager/include/packager/chunking_params.h
+
+../libpackager/include/packager/crypto_params.h
 functional
 -
 map
@@ -30,9 +26,13 @@ string
 vector
 -
 
-../libpackager/include/packager/media/public/mp4_output_params.h
+../libpackager/include/packager/hls_params.h
+string
+-
 
-../libpackager/include/packager/mpd/public/mpd_params.h
+../libpackager/include/packager/mp4_output_params.h
+
+../libpackager/include/packager/mpd_params.h
 string
 -
 vector
@@ -45,20 +45,20 @@ string
 -
 vector
 -
-packager/file/public/buffer_callback_params.h
-../libpackager/include/packager/packager/file/public/buffer_callback_params.h
-packager/hls/public/hls_params.h
-../libpackager/include/packager/packager/hls/public/hls_params.h
-packager/media/public/ad_cue_generator_params.h
-../libpackager/include/packager/packager/media/public/ad_cue_generator_params.h
-packager/media/public/chunking_params.h
-../libpackager/include/packager/packager/media/public/chunking_params.h
-packager/media/public/crypto_params.h
-../libpackager/include/packager/packager/media/public/crypto_params.h
-packager/media/public/mp4_output_params.h
-../libpackager/include/packager/packager/media/public/mp4_output_params.h
-packager/mpd/public/mpd_params.h
-../libpackager/include/packager/packager/mpd/public/mpd_params.h
+packager/buffer_callback_params.h
+../libpackager/include/packager/packager/buffer_callback_params.h
+packager/hls_params.h
+../libpackager/include/packager/packager/hls_params.h
+packager/ad_cue_generator_params.h
+../libpackager/include/packager/packager/ad_cue_generator_params.h
+packager/chunking_params.h
+../libpackager/include/packager/packager/chunking_params.h
+packager/crypto_params.h
+../libpackager/include/packager/packager/crypto_params.h
+packager/mp4_output_params.h
+../libpackager/include/packager/packager/mp4_output_params.h
+packager/mpd_params.h
+../libpackager/include/packager/packager/mpd_params.h
 packager/status.h
 ../libpackager/include/packager/packager/status.h
 
@@ -69,8 +69,6 @@ string
 -
 
 /root/CLionProjects/test/main.cpp
-iostream
--
 packager/packager.h
 /root/CLionProjects/test/packager/packager.h
 
